@@ -3,4 +3,9 @@ name = "Multi-Robot-Navigation-Concept"
 version = "0.1.0"
 edition = "2021"
 
+[build-dependencies]
+cmake = "0.1.51"
+cc = "1.2.1"
+
 [dependencies]
+raylib = { version = "5.0.2", features = ["wayland"] }
