@@ -107,8 +107,8 @@ public:
         {
             destiation_rect.x = (int)transform->position.x;
             destiation_rect.y = (int)transform->position.y;
-            destiation_rect.w = transform->width * transform->scale;
-            destiation_rect.h = transform->height * transform->scale;
+            destiation_rect.w = (transform->width * transform->scale);
+            destiation_rect.h = (transform->height * transform->scale);
         }
     }
 

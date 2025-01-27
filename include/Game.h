@@ -36,7 +36,11 @@ enum class MOUSESTATE : int
 enum class GAMESTATE : int
 {
     PREPARE,
-    SELECT,
+    RESIZE,
+    SET_GOAL,
+    SET_START,
+    SET_WALL,
+    SET_WALKABLE,
     CALCULATE,
     QUIT
 };
@@ -54,10 +58,11 @@ public:
     static KEYSTATE key_state;
     static SDL_Keycode last_key;
 
-    static glm::uvec2 mouse_selection[2];
+    static glm::vec2 mouse_selection[2];
     static MOUSESTATE mouse_state;
 
     static GAMESTATE game_state;
+    static glm::uvec2 screen_size;
     
     float scale = 1.f;
 

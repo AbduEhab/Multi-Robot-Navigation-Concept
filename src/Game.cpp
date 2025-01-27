@@ -15,9 +15,11 @@ KEYSTATE Game::key_state;
 SDL_Keycode Game::last_key;
 MOUSESTATE Game::mouse_state;
 
-glm::uvec2 Game::mouse_selection[2]{{0, 0}, {0, 0}};
+glm::vec2 Game::mouse_selection[2]{{0, 0}, {0, 0}};
 
 GAMESTATE Game::game_state = GAMESTATE::PREPARE;
+
+glm::uvec2 Game::screen_size{0};
 
 [[nodiscard]] bool Game::is_running() const
 {
@@ -56,6 +58,8 @@ void Game::init(int width, int height) // init SDL
     ImGui::StyleColorsDark();
     ImGui_ImplSDL2_InitForSDLRenderer(window, renderer);
     ImGui_ImplSDLRenderer2_Init(renderer);
+
+    screen_size = {width, height};
 
     load_level(0);
 
@@ -109,11 +113,15 @@ void Game::process_input()
         case SDL_MOUSEWHEEL:
             if (event.wheel.y > 0) // scroll up
             {
-                scale += 0.1f;
+                // scale += 0.1f;
+                screen_size.x *= 1.1f;
+                screen_size.y *= 1.1f;
             }
             else if (event.wheel.y < 0) // scroll down
             {
-                scale -= 0.1f;
+                // scale -= 0.1f;
+                screen_size.x *= 0.9f;
+                screen_size.y *= 0.9f;
             }
             break;
 
@@ -124,39 +132,48 @@ void Game::process_input()
                 scale = 1.0f;
             }
 
-            if (Game::game_state == GAMESTATE::SELECT)
+            mouse_selection[0] = {event.button.x, event.button.y};
+
+            mouse_state = MOUSESTATE::PRESSED;
+
+            if (event.button.button == SDL_BUTTON_LEFT)
             {
-                if (event.button.button == SDL_BUTTON_LEFT)
+                mouse_selection[1] = {event.button.x, event.button.y};
+                ms_state_updated = true;
+            }
+            break;
+
+        case SDL_MOUSEMOTION:
+            switch (mouse_state)
+            {
+            case MOUSESTATE::PRESSED:
+                mouse_state = MOUSESTATE::DRAGGING;
+
+                if (event.motion.state & SDL_BUTTON_LMASK)
                 {
-                    if (mouse_state == MOUSESTATE::RELEASED)
-                    {
-                        mouse_selection[0] = {event.button.x, event.button.y};
-                        mouse_selection[1] = {event.button.x, event.button.y};
-                        mouse_state = MOUSESTATE::PRESSED;
-                        ms_state_updated = true;
-                    }
+                    mouse_selection[1] = {event.motion.x, event.motion.y};
+                    ms_state_updated = true;
+                }
+                break;
+
+            case MOUSESTATE::DRAGGING:
+                if (event.motion.state & SDL_BUTTON_LMASK)
+                {
+                    mouse_selection[1] = {event.motion.x, event.motion.y};
+                    ms_state_updated = true;
                 }
                 break;
             }
 
-        case SDL_MOUSEMOTION:
-            if (Game::game_state == GAMESTATE::SELECT)
-                if ((mouse_state == MOUSESTATE::PRESSED || mouse_state == MOUSESTATE::DRAGGING) && event.motion.state & SDL_BUTTON_LMASK)
-                {
-                    mouse_selection[1] = {event.motion.x, event.motion.y};
-                    mouse_state = MOUSESTATE::DRAGGING;
-                    ms_state_updated = true;
-                }
             break;
 
         case SDL_MOUSEBUTTONUP:
-            if (Game::game_state == GAMESTATE::SELECT)
+            if (Game::game_state == GAMESTATE::RESIZE)
                 if (event.button.button == SDL_BUTTON_LEFT)
                 {
                     mouse_selection[1] = {event.button.x, event.button.y};
                     mouse_state = MOUSESTATE::RELEASED;
                     manager.get_entity_by_name("Nav-Grid")->get_component<NavigationGridComponent>()->set_element_size(glm::distance(glm::vec2(mouse_selection[0]), glm::vec2(mouse_selection[1])));
-                    Game::game_state = GAMESTATE::PREPARE;
                     ms_state_updated = true;
                 }
             break;
@@ -220,6 +237,28 @@ void Game::render(const float delta_time)
     ImGui_ImplSDLRenderer2_NewFrame();
     ImGui_ImplSDL2_NewFrame();
     ImGui::NewFrame();
+
+    if (ImGui::BeginMainMenuBar())
+    {
+        if (ImGui::BeginMenu("File"))
+        {
+            if (ImGui::MenuItem("New"))
+            {
+                load_level(0);
+            }
+            if (ImGui::MenuItem("Save"))
+            {
+                manager.get_entity_by_name("Nav-Grid")->get_component<NavigationGridComponent>()->save("nav-grid.json");
+            }
+            if (ImGui::MenuItem("Load"))
+            {
+                manager.get_entity_by_name("Nav-Grid")->get_component<NavigationGridComponent>()->load("nav-grid.json");
+            }
+            ImGui::EndMenu();
+        }
+        ImGui::EndMainMenuBar();
+    }
+
     ImGui::Begin("Entity Manager");
 
     for (auto &entity : manager.get_entities())
@@ -252,7 +291,9 @@ void Game::render(const float delta_time)
     ImGui::Text("Mouse Selection Distance: %f", glm::distance(glm::vec2(mouse_selection[0]), glm::vec2(mouse_selection[1])));
     ImGui::End();
 
-    SDL_RenderSetScale(renderer, scale, scale); // set the scale of the renderer
+    // SDL_RenderSetScale(renderer, scale, scale); // set the scale of the renderer
+
+    // SDL_RenderSetLogicalSize(renderer, screen_size.x, screen_size.y);
 
     SDL_SetRenderDrawColor(renderer, 21, 21, 21, 255); // set up the given renderer to render a specific color
     SDL_RenderClear(renderer);                         // clear back buffer with the specified color
@@ -260,8 +301,11 @@ void Game::render(const float delta_time)
     manager.render();
 
     // draw a line in red
-    SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
-    SDL_RenderDrawLine(renderer, mouse_selection[0].x, mouse_selection[0].y, mouse_selection[1].x, mouse_selection[1].y);
+    if (Game::game_state == GAMESTATE::RESIZE)
+    {
+        SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
+        SDL_RenderDrawLine(renderer, mouse_selection[0].x, mouse_selection[0].y, mouse_selection[1].x, mouse_selection[1].y);
+    }
 
     ImGui::Render();
     ImGui_ImplSDLRenderer2_RenderDrawData(ImGui::GetDrawData(), renderer);
