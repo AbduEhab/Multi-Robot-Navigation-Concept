@@ -59,6 +59,10 @@ public:
 
     void update(int x, int y, int scale)
     {
+               // void update(glm::vec2 offset, int scale)
+        //  {
+        //      int x = offset.x + x * scale;
+        //      int y = offset.y + y * scale;
         glm::vec2 mouse_pos = Game::mouse_selection[1];
 
         SDL_Rect rect = {x, y, scale, scale};
@@ -339,7 +343,13 @@ public:
             Game::game_state = GAMESTATE::PREPARE;
         }
 
+        const auto es = element_size;
         ImGui::InputInt("Element Size", (int *)&element_size);
+
+        if (es != element_size)
+        {
+            set_element_size(element_size);
+        }
 #endif // DEBUG
     }
 

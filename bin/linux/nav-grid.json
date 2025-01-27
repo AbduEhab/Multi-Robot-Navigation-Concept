@@ -1,5 +1,5 @@
 {
-    "element_size": 32,
+    "element_size": 19,
     "grid": [
         {
             "goal": false,
@@ -1837,57 +1837,29 @@
         },
         {
             "goal": false,
-            "start": true,
-            "texture": "start",
+            "start": false,
+            "texture": "wall",
             "visited": false,
-            "walkable": true
+            "walkable": false
         },
         {
             "goal": false,
-            "start": true,
-            "texture": "start",
+            "start": false,
+            "texture": "wall",
             "visited": false,
-            "walkable": true
+            "walkable": false
         },
         {
             "goal": false,
-            "start": true,
-            "texture": "start",
+            "start": false,
+            "texture": "wall",
             "visited": false,
-            "walkable": true
+            "walkable": false
         },
         {
             "goal": false,
-            "start": true,
-            "texture": "start",
-            "visited": false,
-            "walkable": true
-        },
-        {
-            "goal": false,
-            "start": true,
-            "texture": "start",
-            "visited": false,
-            "walkable": true
-        },
-        {
-            "goal": false,
-            "start": true,
-            "texture": "start",
-            "visited": false,
-            "walkable": true
-        },
-        {
-            "goal": false,
-            "start": true,
-            "texture": "start",
-            "visited": false,
-            "walkable": true
-        },
-        {
-            "goal": false,
-            "start": true,
-            "texture": "start",
+            "start": false,
+            "texture": "walkable",
             "visited": false,
             "walkable": true
         },
@@ -2216,6 +2188,7195 @@
         {
             "goal": false,
             "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": true,
+            "start": false,
+            "texture": "goal",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": true,
+            "texture": "start",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
             "texture": "wall",
             "visited": false,
             "walkable": false
@@ -2391,6 +9552,160 @@
         {
             "goal": false,
             "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
             "texture": "wall",
             "visited": false,
             "walkable": false
@@ -2583,6 +9898,90 @@
             "texture": "wall",
             "visited": false,
             "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
         },
         {
             "goal": false,
@@ -2849,10 +10248,66 @@
             "texture": "wall",
             "visited": false,
             "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
         },
         {
             "goal": false,
             "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
             "texture": "wall",
             "visited": false,
             "walkable": false
@@ -3136,6 +10591,41 @@
             "texture": "wall",
             "visited": false,
             "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
         },
         {
             "goal": false,
@@ -3451,6 +10941,20 @@
             "texture": "wall",
             "visited": false,
             "walkable": false
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
         },
         {
             "goal": false,
@@ -3922,10 +11426,10 @@
             "walkable": false
         }
     ],
-    "height": 20,
+    "height": 34,
     "position": [
         330.0,
         80.0
     ],
-    "width": 28
+    "width": 48
 }
