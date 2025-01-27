@@ -33,6 +33,14 @@ enum class MOUSESTATE : int
     DRAGGING,
 };
 
+enum class GAMESTATE : int
+{
+    PREPARE,
+    SELECT,
+    CALCULATE,
+    QUIT
+};
+
 class Game
 {
 private:
@@ -48,8 +56,9 @@ public:
 
     static glm::uvec2 mouse_selection[2];
     static MOUSESTATE mouse_state;
-    
 
+    static GAMESTATE game_state;
+    
     float scale = 1.f;
 
     [[nodiscard]] bool is_running() const;

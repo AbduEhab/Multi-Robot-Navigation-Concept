@@ -50,6 +50,32 @@ std::vector<Entity *> EntityManager::get_entities() const
     return entities;
 }
 
+Entity *EntityManager::get_entity_by_name(std::string entity_name) const
+{
+    for (auto &entity : entities)
+    {
+        if (entity->name == entity_name)
+        {
+            return entity;
+        }
+    }
+
+    return nullptr;
+}
+
+bool EntityManager::entity_exists(std::string entity_name) const
+{
+    for (auto &entity : entities)
+    {
+        if (entity->name == entity_name)
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 void EntityManager::list_all_entities() const
 {
 

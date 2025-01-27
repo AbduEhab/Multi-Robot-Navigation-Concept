@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include <Components/ControlComponent.h>
+#include <Components/NavigationGridComponent.h>
 #include <Components/SpriteComponent.h>
 #include <Components/TransformComponent.h>
 #include <Game.h>
@@ -15,6 +16,8 @@ SDL_Keycode Game::last_key;
 MOUSESTATE Game::mouse_state;
 
 glm::uvec2 Game::mouse_selection[2]{{0, 0}, {0, 0}};
+
+GAMESTATE Game::game_state = GAMESTATE::PREPARE;
 
 [[nodiscard]] bool Game::is_running() const
 {
@@ -63,8 +66,14 @@ void Game::load_level([[maybe_unused]] int level_number) const
 {
     asset_manager->clear();
 
+    asset_manager->add_texture("error", "../assets/error.png");
+
     asset_manager->add_texture("map", "../assets/final-slam-map.png");
-    // asset_manager->add_texture("target", "../assets/collision-texture.png");
+    asset_manager->add_texture("target", "../assets/collision-texture.png");
+    asset_manager->add_texture("walkable", "../assets/walkable.png");
+    asset_manager->add_texture("start", "../assets/start.png");
+    asset_manager->add_texture("goal", "../assets/goal.png");
+    asset_manager->add_texture("wall", "../assets/wall.png");
 
     switch (level_number)
     {
@@ -72,11 +81,10 @@ void Game::load_level([[maybe_unused]] int level_number) const
         Entity &base_map = manager.add_entity("base-map");
         (void)base_map.add_component<TransformComponent>(330, 80, 0, 0, 920, 660, 1);
         (void)base_map.add_component<SpriteComponent>("map");
-        (void)base_map.add_component<ControlComponent>("w", "s", "a", "d");
+        // (void)base_map.add_component<ControlComponent>("w", "s", "a", "d");
 
-        // Entity &target = manager.add_entity("test_target");
-        // (void)target.add_component<TransformComponent>(50, 50, 0, 0, 32, 32, 1);
-        // (void)target.add_component<SpriteComponent>("target");
+        Entity &grid = manager.add_entity("Nav-Grid");
+        (void)grid.add_component<NavigationGridComponent>(330, 80, 920, 660, 32);
 
         break;
     }
@@ -115,49 +123,42 @@ void Game::process_input()
             {
                 scale = 1.0f;
             }
-            if (event.button.button == SDL_BUTTON_LEFT)
+
+            if (Game::game_state == GAMESTATE::SELECT)
             {
-                if (mouse_state == MOUSESTATE::RELEASED)
+                if (event.button.button == SDL_BUTTON_LEFT)
                 {
-                    mouse_selection[0] = {event.button.x, event.button.y};
-                    mouse_selection[1] = {event.button.x, event.button.y};
-                    mouse_state = MOUSESTATE::PRESSED;
-                    ms_state_updated = true;
+                    if (mouse_state == MOUSESTATE::RELEASED)
+                    {
+                        mouse_selection[0] = {event.button.x, event.button.y};
+                        mouse_selection[1] = {event.button.x, event.button.y};
+                        mouse_state = MOUSESTATE::PRESSED;
+                        ms_state_updated = true;
+                    }
                 }
+                break;
             }
-            break;
 
         case SDL_MOUSEMOTION:
-            if ((mouse_state == MOUSESTATE::PRESSED || mouse_state == MOUSESTATE::DRAGGING) && event.motion.state & SDL_BUTTON_LMASK)
-            {
-                mouse_selection[1] = {event.motion.x, event.motion.y};
-                mouse_state = MOUSESTATE::DRAGGING;
-                ms_state_updated = true;
-            }
+            if (Game::game_state == GAMESTATE::SELECT)
+                if ((mouse_state == MOUSESTATE::PRESSED || mouse_state == MOUSESTATE::DRAGGING) && event.motion.state & SDL_BUTTON_LMASK)
+                {
+                    mouse_selection[1] = {event.motion.x, event.motion.y};
+                    mouse_state = MOUSESTATE::DRAGGING;
+                    ms_state_updated = true;
+                }
             break;
 
-            // case SDL_MOUSEBUTTONDOWN:
-            //     if (!leftMouseButtonDown && event.button.button == SDL_BUTTON_LEFT)
-            //     {
-            //         leftMouseButtonDown = true;
-
-            //         for (auto rect : rectangles)
-            //         {
-            //             if (SDL_PointInRect(&mousePos, rect))
-            //             {
-            //                 selectedRect = rect;
-            //                 break;
-            //             }
-            //         }
-            //     }
-
         case SDL_MOUSEBUTTONUP:
-            if (event.button.button == SDL_BUTTON_LEFT)
-            {
-                mouse_selection[1] = {event.button.x, event.button.y};
-                mouse_state = MOUSESTATE::RELEASED;
-                ms_state_updated = true;
-            }
+            if (Game::game_state == GAMESTATE::SELECT)
+                if (event.button.button == SDL_BUTTON_LEFT)
+                {
+                    mouse_selection[1] = {event.button.x, event.button.y};
+                    mouse_state = MOUSESTATE::RELEASED;
+                    manager.get_entity_by_name("Nav-Grid")->get_component<NavigationGridComponent>()->set_element_size(glm::distance(glm::vec2(mouse_selection[0]), glm::vec2(mouse_selection[1])));
+                    Game::game_state = GAMESTATE::PREPARE;
+                    ms_state_updated = true;
+                }
             break;
 
         case SDL_KEYDOWN: // if any key is pressed down
@@ -261,7 +262,6 @@ void Game::render(const float delta_time)
     // draw a line in red
     SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
     SDL_RenderDrawLine(renderer, mouse_selection[0].x, mouse_selection[0].y, mouse_selection[1].x, mouse_selection[1].y);
-    
 
     ImGui::Render();
     ImGui_ImplSDLRenderer2_RenderDrawData(ImGui::GetDrawData(), renderer);

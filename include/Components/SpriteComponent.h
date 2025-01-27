@@ -10,6 +10,11 @@ class SpriteComponent : public Component
 public:
     SDL_RendererFlip flip = SDL_FLIP_NONE;
 
+    bool modulate = false;
+    u_char mod[4] = {255, 255, 255, 255};
+
+    bool is_visible = true;
+
 #ifdef DEBUG
     std::string name = "SpriteComponent";
 #endif // DEBUG
@@ -67,6 +72,12 @@ public:
     void set_texture(std::string texture_id)
     {
         texture = Game::asset_manager->get_texture(texture_id);
+
+        if (!texture)
+        {
+            debug_print("Error: Texture is null, defaulting to error.png");
+            texture = Game::asset_manager->get_texture("error");
+        }
     }
 
     void init()
@@ -103,7 +114,24 @@ public:
 
     void render()
     {
-        TextureManager::draw(texture, source_rect, destiation_rect, flip);
+        if (is_visible)
+        {
+            if (modulate)
+            {
+                SDL_SetTextureColorMod(texture, mod[0], mod[1], mod[2]);
+                SDL_SetTextureAlphaMod(texture, mod[3]);
+            }
+            TextureManager::draw(texture, source_rect, destiation_rect, flip);
+        }
+    }
+
+    void set_modulation(bool ext_mod, u_char r, u_char g, u_char b, u_char a)
+    {
+        modulate = ext_mod;
+        mod[0] = r;
+        mod[1] = g;
+        mod[2] = b;
+        mod[3] = a;
     }
 
     void debug_render()
@@ -138,8 +166,8 @@ private:
     bool is_animated;
     bool is_fixed;
 
-    int frame_count;
-    int animation_speed;
+    int frame_count = 0;
+    int animation_speed = 0;
 
     std::map<std::string, Animation> animations;
 
