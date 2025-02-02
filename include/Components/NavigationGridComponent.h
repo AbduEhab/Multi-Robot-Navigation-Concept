@@ -18,6 +18,8 @@ public:
     bool goal = false;
     bool visited = false;
 
+    int path_assigned_to = 0;
+
     bool path = false;
     NavigationGridElement *parent = nullptr;
 
@@ -62,7 +64,7 @@ public:
         }
     }
 
-    void update(int x, int y, int scale)
+    void update(int x, int y, int scale, int path_index)
     {
         // void update(glm::vec2 offset, int scale)
         //  {
@@ -85,6 +87,8 @@ public:
                 goal = false;
                 visited = false;
 
+                path_assigned_to = path_index;
+
                 texture = Game::asset_manager->get_texture("start");
                 break;
 
@@ -93,6 +97,8 @@ public:
                 walkable = true;
                 goal = true;
                 visited = false;
+
+                path_assigned_to = path_index;
 
                 texture = Game::asset_manager->get_texture("goal");
                 break;
@@ -129,9 +135,13 @@ public:
             TextureManager::draw(Game::asset_manager->get_texture("target"), {0, 0, 32, 32}, {x, y, scale, scale}, SDL_FLIP_NONE);
             ImGui::Begin("Element Data");
             ImGui::Text("Position: (%d, %d)", x, y);
+
             ImGui::Text("G: %d", g_cost);
             ImGui::Text("H: %d", h_cost);
             ImGui::Text("F: %d", f_cost);
+
+            ImGui::Text("Type: %s", start ? "Start" : goal ? "Goal" : walkable ? "Walkable" : "Wall");
+            ImGui::Text("Path Assigned To: %d", path_assigned_to);
             ImGui::End();
         }
     }
@@ -249,8 +259,6 @@ public:
 
     bool path_find_running = false;
     std::priority_queue<NavigationGridElement *, std::vector<NavigationGridElement *>, NavigationGridElementCompare> open_set;
-    NavigationGridElement *start;
-    NavigationGridElement *goal;
 
     std::unique_ptr<NavigationGridElement[]> grid;
 
@@ -297,6 +305,9 @@ public:
                 grid[y * width + x].set_coord(x, y);
             }
         }
+
+        paths.clear();
+        paths.push_back(PathContainer());
     }
 
     void set_element_size(const size_t element_size)
@@ -315,7 +326,7 @@ public:
         {
             for (size_t x = 0; x < width; x++)
             {
-                grid[y * width + x].update(position.x + x * element_size, position.y + y * element_size, element_size);
+                grid[y * width + x].update(position.x + x * element_size, position.y + y * element_size, element_size, path_index);
             }
         }
     }
@@ -331,21 +342,127 @@ public:
         }
     }
 
-    bool step()
+    void prepare_path_find(int index)
+    {
+        if (index >= paths.size())
+        {
+            debug_print("Error: Index out of bounds");
+            return;
+        }
+
+        path_find_running = false;
+
+        open_set = std::priority_queue<NavigationGridElement *, std::vector<NavigationGridElement *>, NavigationGridElementCompare>();
+
+        auto &path = paths[index];
+        path.start = nullptr;
+        path.goal = nullptr;
+
+        // get start and goal points
+        for (size_t y = 0; y < height; y++)
+        {
+            for (size_t x = 0; x < width; x++)
+            {
+                auto &element = grid[y * width + x];
+
+                if (element.start && (element.path_assigned_to == index))
+                {
+                    if (path.start)
+                    {
+                        debug_print("Error: Multiple Start Points Defined for Path: " + std::to_string(index));
+                        return;
+                    }
+                    path.start = &element;
+                }
+
+                if (element.goal && (element.path_assigned_to == index))
+                {
+                    if (path.goal)
+                    {
+                        debug_print("Error: Multiple Goal Points Defined for Path: " + std::to_string(index));
+                        return;
+                    }
+                    path.goal = &element;
+                }
+            }
+        }
+
+        if (!path.start || !path.goal)
+        {
+            debug_print("Error: Start or Goal not set");
+            return;
+        }
+
+        if (path.start == path.goal)
+        {
+            debug_print("Error: Start and Goal are the same");
+            return;
+        }
+
+        path.start->visited = true;
+
+        // get 4 neighbours
+        NavigationGridElement *neighbours[4] = {
+            path.start->x > 0 ? &grid[path.start->y * width + path.start->x - 1] : nullptr,
+            path.start->y > 0 ? &grid[(path.start->y - 1) * width + path.start->x] : nullptr,
+            path.start->x < width - 1 ? &grid[path.start->y * width + path.start->x + 1] : nullptr,
+            path.start->y < height - 1 ? &grid[(path.start->y + 1) * width + path.start->x] : nullptr};
+
+        for (auto neighbour : neighbours)
+        {
+            if (!neighbour || !neighbour->walkable || neighbour->visited)
+                continue;
+
+            size_t new_g_cost = path.start->g_cost + 1;
+            size_t new_h_cost = glm::abs((int)neighbour->x - (int)path.goal->x) + glm::abs((int)neighbour->y - (int)path.goal->y);
+            size_t new_f_cost = new_g_cost + new_h_cost;
+
+            if (new_f_cost < neighbour->f_cost || !neighbour->parent)
+            {
+                neighbour->g_cost = new_g_cost;
+                neighbour->h_cost = new_h_cost;
+                neighbour->f_cost = new_f_cost;
+                neighbour->parent = path.start;
+
+                open_set.push(neighbour);
+            }
+        }
+
+        path_find_running = true;
+    }
+
+    void reset_nodes()
+    {
+        for (size_t y = 0; y < height; y++)
+        {
+            for (size_t x = 0; x < width; x++)
+            {
+                auto &element = grid[y * width + x];
+
+                element.visited = false;
+                element.g_cost = 0;
+                element.h_cost = 0;
+                element.f_cost = 0;
+                element.parent = nullptr;
+            }
+        }
+    }
+
+    bool step(int curr_path, NavigationGridElement *start, NavigationGridElement *goal)
     {
         auto current = open_set.top();
         open_set.pop();
 
-        if (current == goal)
+        if ((current == goal) && (curr_path == current->path_assigned_to))
         {
-            debug_print("Path Found");
+            debug_print("Path Found for index: " + std::to_string(curr_path));
             // render path
             for (auto current = goal->parent; current && (current != start); current = current->parent)
             {
                 current->path = true;
                 current->data_render(false);
             }
-            // goal_reached = true;
+            paths[curr_path].goal_found = true;
             return true;
         }
 
@@ -404,11 +521,23 @@ public:
             ImGui::SameLine();
             if (ImGui::Button("Remove Path"))
             {
-                if (!paths.empty())
-                    paths.pop_back();
+                // remove the element at the current path_index
+                if (paths.size() > 1)
+                    paths.erase(paths.begin() + path_index);
             }
 
+            path_index = path_index + 1;
             ImGui::InputInt("Path to Edit", &path_index);
+            path_index = path_index - 1;
+
+            if (path_index >= paths.size())
+            {
+                path_index = paths.size() - 1;
+            }
+            if (path_index < 0)
+            {
+                path_index = 0;
+            }
 
             path_find_running = false;
 
@@ -477,90 +606,11 @@ public:
             set_element_size(element_size);
         }
 
-        if (ImGui::Button("Init Path Find"))
+        if (ImGui::Button("Enter Path Find Mode"))
         {
-            if (editable)
-            {
-                editable = false;
-            }
-
-            path_find_running = false;
-
-            open_set = std::priority_queue<NavigationGridElement *, std::vector<NavigationGridElement *>, NavigationGridElementCompare>();
-            start = nullptr;
-            goal = nullptr;
-
-            // get start and goal points
-            for (size_t y = 0; y < height; y++)
-            {
-                for (size_t x = 0; x < width; x++)
-                {
-                    auto &element = grid[y * width + x];
-
-                    if (element.start)
-                    {
-                        if (start)
-                        {
-                            debug_print("Error: Multiple Start Points");
-                            return;
-                        }
-                        start = &element;
-                    }
-
-                    if (element.goal)
-                    {
-                        if (goal)
-                        {
-                            debug_print("Error: Multiple Goal Points");
-                            return;
-                        }
-                        goal = &element;
-                    }
-                }
-            }
-
-            if (!start || !goal)
-            {
-                debug_print("Error: Start or Goal not set");
-                return;
-            }
-
-            if (start == goal)
-            {
-                debug_print("Error: Start and Goal are the same");
-                return;
-            }
-
-            start->visited = true;
-
-            // get 4 neighbours
-            NavigationGridElement *neighbours[4] = {
-                start->x > 0 ? &grid[start->y * width + start->x - 1] : nullptr,
-                start->y > 0 ? &grid[(start->y - 1) * width + start->x] : nullptr,
-                start->x < width - 1 ? &grid[start->y * width + start->x + 1] : nullptr,
-                start->y < height - 1 ? &grid[(start->y + 1) * width + start->x] : nullptr};
-
-            for (auto neighbour : neighbours)
-            {
-                if (!neighbour || !neighbour->walkable || neighbour->visited)
-                    continue;
-
-                size_t new_g_cost = start->g_cost + 1;
-                size_t new_h_cost = glm::abs((int)neighbour->x - (int)goal->x) + glm::abs((int)neighbour->y - (int)goal->y);
-                size_t new_f_cost = new_g_cost + new_h_cost;
-
-                if (new_f_cost < neighbour->f_cost || !neighbour->parent)
-                {
-                    neighbour->g_cost = new_g_cost;
-                    neighbour->h_cost = new_h_cost;
-                    neighbour->f_cost = new_f_cost;
-                    neighbour->parent = start;
-
-                    open_set.push(neighbour);
-                }
-            }
-
-            path_find_running = true;
+            editable = false;
+            reset_nodes();
+            prepare_path_find(path_index);
         }
 
         if (path_find_running)
@@ -569,17 +619,24 @@ public:
             {
                 if (!open_set.empty())
                 {
-                    if (step())
+                    if (step(path_index, paths[path_index].start, paths[path_index].goal))
                         path_find_running = false;
                 }
                 else
                     path_find_running = false;
             }
+            ImGui::SameLine();
             if (ImGui::Button("Run to End"))
             {
-                while (!open_set.empty())
-                    if (step())
-                        break;
+                for (size_t i = 0; i < paths.size(); i++)
+                {
+                    reset_nodes();
+                    prepare_path_find(i);
+
+                    while (!open_set.empty())
+                        if (step(i, paths[i].start, paths[i].goal))
+                            break;
+                }
                 path_find_running = false;
             }
         }
@@ -587,7 +644,7 @@ public:
         ImGui::Text("Path Find Running: %s", path_find_running ? "true" : "false");
         for (size_t i = 0; i < paths.size(); i++)
         {
-            ImGui::Text("Path %s for index %s", paths[i].goal_found ? "found" : "could not be found for path", i);
+            ImGui::Text("Path %s for index %i", paths[i].goal_found ? "found" : "could not be found for path", i + 1);
         }
 
 #endif // DEBUG
