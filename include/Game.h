@@ -59,6 +59,7 @@ public:
     static SDL_Keycode last_key;
 
     static glm::vec2 mouse_selection[2];
+    static glm::vec2 mouse_pos;
     static MOUSESTATE mouse_state;
 
     static GAMESTATE game_state;

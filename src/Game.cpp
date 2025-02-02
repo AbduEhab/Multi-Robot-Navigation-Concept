@@ -16,6 +16,7 @@ SDL_Keycode Game::last_key;
 MOUSESTATE Game::mouse_state;
 
 glm::vec2 Game::mouse_selection[2]{{0, 0}, {0, 0}};
+glm::vec2 Game::mouse_pos{0};
 
 GAMESTATE Game::game_state = GAMESTATE::PREPARE;
 
@@ -78,6 +79,8 @@ void Game::load_level([[maybe_unused]] int level_number) const
     asset_manager->add_texture("start", "../assets/start.png");
     asset_manager->add_texture("goal", "../assets/goal.png");
     asset_manager->add_texture("wall", "../assets/wall.png");
+    asset_manager->add_texture("path0", "../assets/path0.png");
+    asset_manager->add_texture("walked0", "../assets/walked0.png");
 
     switch (level_number)
     {
@@ -144,6 +147,7 @@ void Game::process_input()
             break;
 
         case SDL_MOUSEMOTION:
+            mouse_pos = {event.motion.x, event.motion.y};
             switch (mouse_state)
             {
             case MOUSESTATE::PRESSED:

@@ -8,6 +8,8 @@
 
 #include "json.hpp"
 
+class NavigationGridElement;
+
 class NavigationGridElement
 {
 public:
@@ -15,6 +17,9 @@ public:
     bool walkable = false;
     bool goal = false;
     bool visited = false;
+
+    bool path = false;
+    NavigationGridElement *parent = nullptr;
 
     size_t x, y;
 
@@ -59,7 +64,7 @@ public:
 
     void update(int x, int y, int scale)
     {
-               // void update(glm::vec2 offset, int scale)
+        // void update(glm::vec2 offset, int scale)
         //  {
         //      int x = offset.x + x * scale;
         //      int y = offset.y + y * scale;
@@ -116,6 +121,19 @@ public:
     void render(int x, int y, int scale)
     {
         TextureManager::draw(texture, {0, 0, 32, 32}, {x, y, scale, scale}, SDL_FLIP_NONE);
+
+        SDL_Rect rect = {x, y, scale, scale};
+        SDL_Point mouse_pos_sdl = {(int)Game::mouse_pos.x, (int)Game::mouse_pos.y};
+        if (SDL_PointInRect(&mouse_pos_sdl, &rect))
+        {
+            TextureManager::draw(Game::asset_manager->get_texture("target"), {0, 0, 32, 32}, {x, y, scale, scale}, SDL_FLIP_NONE);
+            ImGui::Begin("Element Data");
+            ImGui::Text("Position: (%d, %d)", x, y);
+            ImGui::Text("G: %d", g_cost);
+            ImGui::Text("H: %d", h_cost);
+            ImGui::Text("F: %d", f_cost);
+            ImGui::End();
+        }
     }
 
     void data_render(bool update = true)
@@ -160,6 +178,20 @@ public:
 
             texture = Game::asset_manager->get_texture("goal");
         }
+        if (path)
+        {
+            start = false;
+            goal = false;
+
+            texture = Game::asset_manager->get_texture("path0");
+        }
+        if (visited && (!start || !goal) && !path)
+        {
+            start = false;
+            goal = false;
+
+            texture = Game::asset_manager->get_texture("walked0");
+        }
     }
 
     // serialize to nlohmann json
@@ -188,11 +220,37 @@ public:
     }
 };
 
+class NavigationGridElementCompare
+{
+public:
+    bool operator()(NavigationGridElement *a, NavigationGridElement *b)
+    {
+        return a->f_cost >= b->f_cost;
+    }
+};
+
+class PathContainer
+{
+public:
+    NavigationGridElement *start = nullptr;
+    NavigationGridElement *goal = nullptr;
+    std::vector<NavigationGridElement *> path;
+    bool goal_found = false;
+};
+
 class NavigationGridComponent : public Component
 {
 public:
     size_t element_size;
     bool editable = false;
+
+    int path_index = 0;
+    std::vector<PathContainer> paths; // bool is for if a goal was found
+
+    bool path_find_running = false;
+    std::priority_queue<NavigationGridElement *, std::vector<NavigationGridElement *>, NavigationGridElementCompare> open_set;
+    NavigationGridElement *start;
+    NavigationGridElement *goal;
 
     std::unique_ptr<NavigationGridElement[]> grid;
 
@@ -231,7 +289,7 @@ public:
         this->height = ref_height / element_size;
 
         grid = std::make_unique<NavigationGridElement[]>(width * height);
-        
+
         for (size_t y = 0; y < height; y++)
         {
             for (size_t x = 0; x < width; x++)
@@ -273,6 +331,57 @@ public:
         }
     }
 
+    bool step()
+    {
+        auto current = open_set.top();
+        open_set.pop();
+
+        if (current == goal)
+        {
+            debug_print("Path Found");
+            // render path
+            for (auto current = goal->parent; current && (current != start); current = current->parent)
+            {
+                current->path = true;
+                current->data_render(false);
+            }
+            // goal_reached = true;
+            return true;
+        }
+
+        current->visited = true;
+        current->data_render(false);
+
+        // get 4 neighbours
+        NavigationGridElement *neighbours[4] = {
+            current->x > 0 ? &grid[current->y * width + current->x - 1] : nullptr,
+            current->y > 0 ? &grid[(current->y - 1) * width + current->x] : nullptr,
+            current->x < width - 1 ? &grid[current->y * width + current->x + 1] : nullptr,
+            current->y < height - 1 ? &grid[(current->y + 1) * width + current->x] : nullptr};
+
+        for (auto cell : neighbours)
+        {
+            if (!cell || !cell->walkable || cell->visited)
+                continue;
+
+            size_t new_g_cost = current->g_cost + 1;
+            size_t new_h_cost = glm::abs((int)cell->x - (int)goal->x) + glm::abs((int)cell->y - (int)goal->y);
+            size_t new_f_cost = new_g_cost + new_h_cost;
+
+            if (new_f_cost < cell->f_cost || !cell->parent)
+            {
+                cell->g_cost = new_g_cost;
+                cell->h_cost = new_h_cost;
+                cell->f_cost = new_f_cost;
+                cell->parent = current;
+
+                open_set.push(cell);
+            }
+        }
+
+        return false;
+    }
+
     void debug_render()
     {
 #ifdef DEBUG
@@ -287,6 +396,22 @@ public:
 
         if (editable)
         {
+            ImGui::Text("Number of paths: %d", paths.size());
+            if (ImGui::Button("Add Path"))
+            {
+                paths.push_back(PathContainer());
+            }
+            ImGui::SameLine();
+            if (ImGui::Button("Remove Path"))
+            {
+                if (!paths.empty())
+                    paths.pop_back();
+            }
+
+            ImGui::InputInt("Path to Edit", &path_index);
+
+            path_find_running = false;
+
             switch (Game::game_state)
             {
             case GAMESTATE::PREPARE:
@@ -340,6 +465,7 @@ public:
         {
             set_element_size(32);
             editable = false;
+            path_find_running = false;
             Game::game_state = GAMESTATE::PREPARE;
         }
 
@@ -350,10 +476,125 @@ public:
         {
             set_element_size(element_size);
         }
+
+        if (ImGui::Button("Init Path Find"))
+        {
+            if (editable)
+            {
+                editable = false;
+            }
+
+            path_find_running = false;
+
+            open_set = std::priority_queue<NavigationGridElement *, std::vector<NavigationGridElement *>, NavigationGridElementCompare>();
+            start = nullptr;
+            goal = nullptr;
+
+            // get start and goal points
+            for (size_t y = 0; y < height; y++)
+            {
+                for (size_t x = 0; x < width; x++)
+                {
+                    auto &element = grid[y * width + x];
+
+                    if (element.start)
+                    {
+                        if (start)
+                        {
+                            debug_print("Error: Multiple Start Points");
+                            return;
+                        }
+                        start = &element;
+                    }
+
+                    if (element.goal)
+                    {
+                        if (goal)
+                        {
+                            debug_print("Error: Multiple Goal Points");
+                            return;
+                        }
+                        goal = &element;
+                    }
+                }
+            }
+
+            if (!start || !goal)
+            {
+                debug_print("Error: Start or Goal not set");
+                return;
+            }
+
+            if (start == goal)
+            {
+                debug_print("Error: Start and Goal are the same");
+                return;
+            }
+
+            start->visited = true;
+
+            // get 4 neighbours
+            NavigationGridElement *neighbours[4] = {
+                start->x > 0 ? &grid[start->y * width + start->x - 1] : nullptr,
+                start->y > 0 ? &grid[(start->y - 1) * width + start->x] : nullptr,
+                start->x < width - 1 ? &grid[start->y * width + start->x + 1] : nullptr,
+                start->y < height - 1 ? &grid[(start->y + 1) * width + start->x] : nullptr};
+
+            for (auto neighbour : neighbours)
+            {
+                if (!neighbour || !neighbour->walkable || neighbour->visited)
+                    continue;
+
+                size_t new_g_cost = start->g_cost + 1;
+                size_t new_h_cost = glm::abs((int)neighbour->x - (int)goal->x) + glm::abs((int)neighbour->y - (int)goal->y);
+                size_t new_f_cost = new_g_cost + new_h_cost;
+
+                if (new_f_cost < neighbour->f_cost || !neighbour->parent)
+                {
+                    neighbour->g_cost = new_g_cost;
+                    neighbour->h_cost = new_h_cost;
+                    neighbour->f_cost = new_f_cost;
+                    neighbour->parent = start;
+
+                    open_set.push(neighbour);
+                }
+            }
+
+            path_find_running = true;
+        }
+
+        if (path_find_running)
+        {
+            if (ImGui::Button("Step (only for debug purposes)"))
+            {
+                if (!open_set.empty())
+                {
+                    if (step())
+                        path_find_running = false;
+                }
+                else
+                    path_find_running = false;
+            }
+            if (ImGui::Button("Run to End"))
+            {
+                while (!open_set.empty())
+                    if (step())
+                        break;
+                path_find_running = false;
+            }
+        }
+
+        ImGui::Text("Path Find Running: %s", path_find_running ? "true" : "false");
+        for (size_t i = 0; i < paths.size(); i++)
+        {
+            ImGui::Text("Path %s for index %s", paths[i].goal_found ? "found" : "could not be found for path", i);
+        }
+
 #endif // DEBUG
     }
 
-    void save(const std::string &file_name)
+    void
+    save(const std::string &file_name)
     {
         debug_print("Saving Navigation Grid to: " + file_name);
         nlohmann::json j;
