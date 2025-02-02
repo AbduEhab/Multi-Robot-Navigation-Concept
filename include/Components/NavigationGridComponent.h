@@ -260,6 +260,12 @@ public:
     }
 };
 
+enum class PATHACTION
+{
+    WALK,
+    STOP,
+};
+
 class PathContainer
 {
 public:
@@ -268,8 +274,34 @@ public:
     std::vector<NavigationGridElement *> path;
     bool goal_found = false;
 
+    std::vector<PATHACTION> actions;
+
     uint32_t verification_index = 0;
     bool verification_complete = false;
+
+    nlohmann::json get_path_json()
+    {
+        nlohmann::json j;
+
+        for (auto element : path)
+        {
+            j.push_back({element->x, element->y});
+        }
+
+        return j;
+    }
+
+    nlohmann::json get_actions_json()
+    {
+        nlohmann::json j;
+
+        for (auto &action : actions)
+        {
+            j.push_back((int)action);
+        }
+
+        return j;
+    }
 };
 
 class NavigationGridComponent : public Component
@@ -280,6 +312,7 @@ public:
     bool editable = false;
     bool path_find_running = false;
     bool verification_running = false;
+    bool verification_successful = false;
 
     int path_index = 0;
     std::vector<PathContainer> paths; // bool is for if a goal was found
@@ -556,11 +589,13 @@ public:
             auto current = path.path[path.verification_index];
             if (current->occupied)
             {
-                debug_print("Path is bloacked for index: " + std::to_string(i), \
-                " at location: (" + std::to_string(current->x) + ", " + std::to_string(current->y) + ")", ". Waiting for it to clear");
-
+                debug_print("Path is bloacked for index: " + std::to_string(i),
+                            " at location: (" + std::to_string(current->x) + ", " + std::to_string(current->y) + ")", ". Waiting for it to clear");
+                path.actions.push_back(PATHACTION::STOP);
                 continue;
             }
+
+            path.actions.push_back(PATHACTION::WALK);
             current->occupied = true;
             current->path_assigned_to = i;
             current->data_render(false);
@@ -573,6 +608,11 @@ public:
             }
 
             path.verification_index++;
+
+            if (path.verification_index >= path.path.size())
+            {
+                path.verification_complete = true;
+            }
         }
     }
 
@@ -766,7 +806,36 @@ public:
                         verification_running = true;
                     }
                 }
+                if (!verification_running)
+                {
+                    verification_successful = true;
+                }
                 step_verification();
+            }
+        }
+
+        if (verification_successful)
+        {
+            if (ImGui::Button("Export Paths"))
+            {
+                debug_print("Exporting Paths");
+
+                nlohmann::json j;
+
+                for (auto &path : paths)
+                {
+                    nlohmann::json path_data;
+                    debug_print("Adding path to json");
+                    path_data["path"] = path.get_path_json();
+                    debug_print("Adding actions to json");
+                    path_data["actions"] = path.get_actions_json();
+
+                    j.push_back(path_data);
+                }
+
+                std::ofstream file("paths.json");
+                file << j.dump(4);
+                file.close();
             }
         }
 
