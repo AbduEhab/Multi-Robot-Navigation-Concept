@@ -227,6 +227,8 @@ add_subdirectory(
     external/glm
 )
 
+# <------------------------------------------------>
+
 # <-- Add directory of external libs to link here: -->
 target_link_directories(${PROJECT_NAME}
     PRIVATE src # this line is just to prevent errors

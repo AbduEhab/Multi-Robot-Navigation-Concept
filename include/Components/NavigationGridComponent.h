@@ -18,6 +18,8 @@ public:
     bool goal = false;
     bool visited = false;
 
+    bool occupied = false;
+
     int path_assigned_to = 0;
 
     bool path = false;
@@ -140,8 +142,10 @@ public:
             ImGui::Text("H: %d", h_cost);
             ImGui::Text("F: %d", f_cost);
 
-            ImGui::Text("Type: %s", start ? "Start" : goal ? "Goal" : walkable ? "Walkable" : "Wall");
-            ImGui::Text("Path Assigned To: %d", path_assigned_to);
+            ImGui::Text("Type: %s", start ? "Start" : goal   ? "Goal"
+                                                  : walkable ? "Walkable"
+                                                             : "Wall");
+            ImGui::Text("Path Assigned To: %d", (path_assigned_to + 1));
             ImGui::End();
         }
     }
@@ -202,6 +206,17 @@ public:
 
             texture = Game::asset_manager->get_texture("walked0");
         }
+        if (occupied)
+        {
+            if (path_assigned_to == 0)
+            {
+                texture = Game::asset_manager->get_texture("p1");
+            }
+            else
+            {
+                texture = Game::asset_manager->get_texture("p2");
+            }
+        }
     }
 
     // serialize to nlohmann json
@@ -213,6 +228,9 @@ public:
         j["walkable"] = walkable;
         j["goal"] = goal;
         j["visited"] = visited;
+        j["path"] = path;
+        j["occupied"] = occupied;
+        j["path_assigned_to"] = path_assigned_to;
 
         j["texture"] = Game::asset_manager->get_texture_name(texture);
 
@@ -225,6 +243,9 @@ public:
         walkable = j["walkable"];
         goal = j["goal"];
         visited = j["visited"];
+        path = j["path"];
+        occupied = j["occupied"];
+        path_assigned_to = j["path_assigned_to"];
 
         set_texture(j["texture"]);
     }
@@ -246,18 +267,23 @@ public:
     NavigationGridElement *goal = nullptr;
     std::vector<NavigationGridElement *> path;
     bool goal_found = false;
+
+    uint32_t verification_index = 0;
+    bool verification_complete = false;
 };
 
 class NavigationGridComponent : public Component
 {
 public:
     size_t element_size;
+
     bool editable = false;
+    bool path_find_running = false;
+    bool verification_running = false;
 
     int path_index = 0;
     std::vector<PathContainer> paths; // bool is for if a goal was found
 
-    bool path_find_running = false;
     std::priority_queue<NavigationGridElement *, std::vector<NavigationGridElement *>, NavigationGridElementCompare> open_set;
 
     std::unique_ptr<NavigationGridElement[]> grid;
@@ -357,6 +383,8 @@ public:
         auto &path = paths[index];
         path.start = nullptr;
         path.goal = nullptr;
+        path.goal_found = false;
+        path.path.clear();
 
         // get start and goal points
         for (size_t y = 0; y < height; y++)
@@ -448,21 +476,32 @@ public:
         }
     }
 
-    bool step(int curr_path, NavigationGridElement *start, NavigationGridElement *goal)
+    bool step(int curr_path)
     {
         auto current = open_set.top();
         open_set.pop();
 
+        auto start = paths[curr_path].start;
+        auto goal = paths[curr_path].goal;
+
         if ((current == goal) && (curr_path == current->path_assigned_to))
         {
             debug_print("Path Found for index: " + std::to_string(curr_path));
-            // render path
+
+            // assign path
+            paths[curr_path].path.push_back(current);
             for (auto current = goal->parent; current && (current != start); current = current->parent)
             {
+                paths[curr_path].path.push_back(current);
+
                 current->path = true;
                 current->data_render(false);
             }
+            // reverse path
+            std::reverse(paths[curr_path].path.begin(), paths[curr_path].path.end());
+
             paths[curr_path].goal_found = true;
+
             return true;
         }
 
@@ -497,6 +536,44 @@ public:
         }
 
         return false;
+    }
+
+    void step_verification()
+    {
+        for (auto i = 0; i < paths.size(); i++)
+        {
+            auto &path = paths[i];
+
+            if (path.verification_complete)
+                continue;
+
+            if (path.verification_index >= path.path.size())
+            {
+                path.verification_complete = true;
+                continue;
+            }
+
+            auto current = path.path[path.verification_index];
+            if (current->occupied)
+            {
+                debug_print("Path is bloacked for index: " + std::to_string(i), \
+                " at location: (" + std::to_string(current->x) + ", " + std::to_string(current->y) + ")", ". Waiting for it to clear");
+
+                continue;
+            }
+            current->occupied = true;
+            current->path_assigned_to = i;
+            current->data_render(false);
+
+            auto prev = path.verification_index > 0 ? path.path[path.verification_index - 1] : nullptr;
+
+            if (prev)
+            {
+                prev->occupied = false;
+            }
+
+            path.verification_index++;
+        }
     }
 
     void debug_render()
@@ -540,6 +617,7 @@ public:
             }
 
             path_find_running = false;
+            verification_running = false;
 
             switch (Game::game_state)
             {
@@ -595,6 +673,7 @@ public:
             set_element_size(32);
             editable = false;
             path_find_running = false;
+            verification_running = false;
             Game::game_state = GAMESTATE::PREPARE;
         }
 
@@ -606,9 +685,12 @@ public:
             set_element_size(element_size);
         }
 
+        ImGui::SeparatorText("Path Finding");
+
         if (ImGui::Button("Enter Path Find Mode"))
         {
             editable = false;
+            verification_running = false;
             reset_nodes();
             prepare_path_find(path_index);
         }
@@ -619,7 +701,7 @@ public:
             {
                 if (!open_set.empty())
                 {
-                    if (step(path_index, paths[path_index].start, paths[path_index].goal))
+                    if (step(path_index))
                         path_find_running = false;
                 }
                 else
@@ -634,7 +716,7 @@ public:
                     prepare_path_find(i);
 
                     while (!open_set.empty())
-                        if (step(i, paths[i].start, paths[i].goal))
+                        if (step(i))
                             break;
                 }
                 path_find_running = false;
@@ -647,11 +729,51 @@ public:
             ImGui::Text("Path %s for index %i", paths[i].goal_found ? "found" : "could not be found for path", i + 1);
         }
 
+        ImGui::SeparatorText("Verification");
+
+        if (ImGui::Button("Enter Verification Mode"))
+        {
+            editable = false;
+            path_find_running = false;
+            verification_running = true;
+
+            for (size_t i = 0; i < paths.size(); i++)
+            {
+                if (!paths[i].goal_found)
+                {
+                    ImGui::Text("Error: Path %i not found. Please make sure paths were generated", i + 1);
+                    return;
+                }
+                else
+                {
+                    paths[i].verification_index = 0;
+                    paths[i].verification_complete = false;
+                }
+            }
+
+            reset_nodes();
+        }
+
+        if (verification_running)
+        {
+            if (ImGui::Button("Step (only for debug purposes)"))
+            {
+                verification_running = false;
+                for (auto &path : paths)
+                {
+                    if (!path.verification_complete)
+                    {
+                        verification_running = true;
+                    }
+                }
+                step_verification();
+            }
+        }
+
 #endif // DEBUG
     }
 
-    void
-    save(const std::string &file_name)
+    void save(const std::string &file_name)
     {
         debug_print("Saving Navigation Grid to: " + file_name);
         nlohmann::json j;
@@ -660,6 +782,8 @@ public:
         j["element_size"] = element_size;
         j["width"] = width;
         j["height"] = height;
+
+        j["paths"] = paths.size();
 
         nlohmann::json grid_data;
 
@@ -701,6 +825,8 @@ public:
         height = j["height"];
 
         init();
+
+        paths = std::vector<PathContainer>(j["paths"]);
 
         nlohmann::json grid_data = j["grid"];
 

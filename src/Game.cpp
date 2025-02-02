@@ -6,6 +6,8 @@
 #include <Components/TransformComponent.h>
 #include <Game.h>
 
+#include <L2DFileDialog/L2DFileDialog.h>
+
 EntityManager manager;
 AssetManager *Game::asset_manager = new AssetManager(&manager);
 SDL_Renderer *Game::renderer;
@@ -81,6 +83,8 @@ void Game::load_level([[maybe_unused]] int level_number) const
     asset_manager->add_texture("wall", "../assets/wall.png");
     asset_manager->add_texture("path0", "../assets/path0.png");
     asset_manager->add_texture("walked0", "../assets/walked0.png");
+    asset_manager->add_texture("p1", "../assets/p1.png");
+    asset_manager->add_texture("p2", "../assets/p2.png");
 
     switch (level_number)
     {
@@ -253,6 +257,25 @@ void Game::render(const float delta_time)
             if (ImGui::MenuItem("Save"))
             {
                 manager.get_entity_by_name("Nav-Grid")->get_component<NavigationGridComponent>()->save("nav-grid.json");
+
+                // static char *file_dialog_buffer;
+                // static char path[500] = "";
+
+                // ImGui::TextUnformatted("Path: ");
+                // ImGui::InputText("##path", path, sizeof(path));
+                // ImGui::SameLine();
+
+                // if (FileDialog::file_dialog_open)
+                // {
+                //     FileDialog::ShowFileDialog_s(&FileDialog::file_dialog_open, file_dialog_buffer, FileDialog::file_dialog_open_type);
+                // }
+
+                // if (ImGui::Button("Choose file"))
+                // {
+                //     file_dialog_buffer = path;
+                //     FileDialog::file_dialog_open = true;
+                //     FileDialog::file_dialog_open_type = FileDialog::FileDialogType::OpenFile;
+                // }
             }
             if (ImGui::MenuItem("Load"))
             {
