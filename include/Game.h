@@ -64,6 +64,8 @@ public:
 
     static GAMESTATE game_state;
     static glm::uvec2 screen_size;
+
+    static std::string level_name;
     
     float scale = 1.f;
 

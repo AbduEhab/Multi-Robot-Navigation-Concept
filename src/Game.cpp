@@ -24,6 +24,8 @@ GAMESTATE Game::game_state = GAMESTATE::PREPARE;
 
 glm::uvec2 Game::screen_size{0};
 
+std::string Game::level_name = "../assets/error.png";
+
 [[nodiscard]] bool Game::is_running() const
 {
     return running;
@@ -73,7 +75,7 @@ void Game::load_level([[maybe_unused]] int level_number) const
 {
     asset_manager->clear();
 
-    asset_manager->add_texture("error", "../assets/error.png");
+    asset_manager->add_texture("error", level_name.c_str());
 
     asset_manager->add_texture("map", "../assets/final-slam-map.png");
     asset_manager->add_texture("target", "../assets/collision-texture.png");
@@ -252,7 +254,26 @@ void Game::render(const float delta_time)
         {
             if (ImGui::MenuItem("New"))
             {
-                manager.clear();
+                static char *file_dialog_buffer;
+                static char path[500] = "";
+
+                ImGui::TextUnformatted("Path: ");
+                ImGui::InputText("##path", path, sizeof(path));
+                ImGui::SameLine();
+
+                if (FileDialog::file_dialog_open)
+                {
+                    FileDialog::ShowFileDialog_s(&FileDialog::file_dialog_open, file_dialog_buffer, FileDialog::file_dialog_open_type);
+                }
+
+                if (ImGui::Button("Choose file"))
+                {
+                    file_dialog_buffer = path;
+                    FileDialog::file_dialog_open = true;
+                    FileDialog::file_dialog_open_type = FileDialog::FileDialogType::OpenFile;
+                }
+
+                manager = EntityManager();
                 load_level(0);
             }
             if (ImGui::MenuItem("Save"))
