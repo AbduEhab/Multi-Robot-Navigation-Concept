@@ -618,7 +618,7 @@ public:
 
     void debug_render()
     {
-#ifdef DEBUG
+// #ifdef DEBUG
         ImGui::DragFloat2("Position", &position.x, 10.f);
 
         ImGui::SeparatorText("Setup");
@@ -839,7 +839,7 @@ public:
             }
         }
 
-#endif // DEBUG
+// #endif // DEBUG
     }
 
     void save(const std::string &file_name)
