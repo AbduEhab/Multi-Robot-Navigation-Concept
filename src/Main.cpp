@@ -8,7 +8,7 @@ int main(int argc, char *arg[])
 
     Game game = Game();
 
-    game.init(1280, 800);
+    game.init(1400, 900);
 
     Engine::end_time_of_last_frame = Clock::now();
 

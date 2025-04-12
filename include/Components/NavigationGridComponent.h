@@ -321,7 +321,7 @@ public:
 
     std::unique_ptr<NavigationGridElement[]> grid;
 
-    glm::vec2 position{0};
+    glm::vec2 *position;
 
     size_t width;
     size_t height;
@@ -333,9 +333,9 @@ public:
     std::string name = "NavigationGridComponent";
 #endif // DEBUG
 
-    NavigationGridComponent(const size_t x, const size_t y, const size_t width, const size_t height, size_t element_size)
+    NavigationGridComponent(glm::vec2 *position, const size_t width, const size_t height, size_t element_size)
     {
-        this->position = glm::vec2(x, y);
+        this->position = position;
 
         ref_width = width;
         ref_height = height;
@@ -385,7 +385,7 @@ public:
         {
             for (size_t x = 0; x < width; x++)
             {
-                grid[y * width + x].update(position.x + x * element_size, position.y + y * element_size, element_size, path_index);
+                grid[y * width + x].update(position->x + x * element_size, position->y + y * element_size, element_size, path_index);
             }
         }
     }
@@ -396,7 +396,7 @@ public:
         {
             for (size_t x = 0; x < width; x++)
             {
-                grid[y * width + x].render(position.x + x * element_size, position.y + y * element_size, element_size);
+                grid[y * width + x].render(position->x + x * element_size, position->y + y * element_size, element_size);
             }
         }
     }
@@ -618,9 +618,7 @@ public:
 
     void debug_render()
     {
-// #ifdef DEBUG
-        ImGui::DragFloat2("Position", &position.x, 10.f);
-
+        // #ifdef DEBUG
         ImGui::SeparatorText("Setup");
 
         if (ImGui::Button("Toggle Edit Mode"))
@@ -839,7 +837,7 @@ public:
             }
         }
 
-// #endif // DEBUG
+        // #endif // DEBUG
     }
 
     void save(const std::string &file_name)
@@ -847,7 +845,7 @@ public:
         debug_print("Saving Navigation Grid to: " + file_name);
         nlohmann::json j;
 
-        j["position"] = {position.x, position.y};
+        j["position"] = {position->x, position->y};
         j["element_size"] = element_size;
         j["width"] = width;
         j["height"] = height;
@@ -886,8 +884,8 @@ public:
         file >> j;
         file.close();
 
-        position.x = j["position"][0];
-        position.y = j["position"][1];
+        position->x = j["position"][0];
+        position->y = j["position"][1];
 
         element_size = j["element_size"];
         width = j["width"];

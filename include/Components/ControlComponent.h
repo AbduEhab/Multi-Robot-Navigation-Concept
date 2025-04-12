@@ -19,17 +19,21 @@ public:
     TransformComponent *transform;
     SpriteComponent *sprite;
 
+    glm::vec2 *control_element;
+
 #ifdef DEBUG
     std::string name = "ControlComponent";
 #endif // DEBUG
 
     ControlComponent() = default;
-    ControlComponent(std::string up_key, std::string down_key, std::string left_key, std::string right_key)
+    ControlComponent(std::string up_key, std::string down_key, std::string left_key, std::string right_key, glm::vec2 *control_element = nullptr)
     {
         this->up_key = get_sdl_key_code(up_key);
         this->down_key = get_sdl_key_code(down_key);
         this->left_key = get_sdl_key_code(left_key);
         this->right_key = get_sdl_key_code(right_key);
+
+        this->control_element = control_element;
     }
 
     auto get_sdl_key_code(std::string &key) -> SDL_KeyCode
@@ -56,24 +60,40 @@ public:
             SDL_Keycode key = Game::last_key;
             if (key == up_key)
             {
+                if (control_element)
+                {
+                    control_element->y -= 1;
+                }
                 transform->velocity = glm::vec2(0, -10);
                 sprite->play("UpAnimation");
                 return;
             }
             if (key == down_key)
             {
+                if (control_element)
+                {
+                    control_element->y += 1;
+                }
                 transform->velocity = glm::vec2(0, 10);
                 sprite->play("DownAnimation");
                 return;
             }
             if (key == left_key)
             {
+                if (control_element)
+                {
+                    control_element->x -= 1;
+                }
                 transform->velocity = glm::vec2(-10, 0);
                 sprite->play("LeftAnimation");
                 return;
             }
             if (key == right_key)
             {
+                if (control_element)
+                {
+                    control_element->x += 1;
+                }
                 transform->velocity = glm::vec2(10, 0);
                 sprite->play("RightAnimation");
                 return;

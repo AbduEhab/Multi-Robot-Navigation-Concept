@@ -14,7 +14,8 @@ public:
     AssetManager(EntityManager *manager);
     ~AssetManager();
     void clear();
-    void add_texture(std::string texture_id, const char *asset_file);
+    bool add_texture(std::string texture_id, const char *asset_file);
+    bool remove_texture(std::string texture_id);
     SDL_Texture *get_texture(std::string texture_id);
     std::string get_texture_name(SDL_Texture *texture);
 };

@@ -119,31 +119,13 @@ inline auto print(First arg, [[maybe_unused]] const Strings &...rest_of_args) ->
     std::puts(os.str().c_str());
 }
 
-/**
- * @brief Prints the variables given to the console in an async manner
- *
- * @tparam First stringstream-able type
- * @tparam Strings restof the stringstream-able types
- * @param arg
- * @param rest
- */
-template <typename First, typename... Strings>
-inline auto async_print(const First arg, const Strings &...rest) -> void
-{
-    std::thread t([&]()
-                  { print(arg, rest...); std::cout << std::endl; });
-    t.detach();
-}
-
 #ifdef DEBUG
 
 #define debug_print(x, ...) print(x, ##__VA_ARGS__);
-#define debug_async_print(x, ...) async_print(x, ##__VA_ARGS__);
 
 #else
 
 #define debug_print(x, ...) ;
-#define debug_async_print(x, ...) ;
 
 #endif
 

@@ -24,7 +24,7 @@ GAMESTATE Game::game_state = GAMESTATE::PREPARE;
 
 glm::uvec2 Game::screen_size{0};
 
-std::string Game::level_name = "../assets/error.png";
+std::filesystem::path map_loc;
 
 [[nodiscard]] bool Game::is_running() const
 {
@@ -75,9 +75,17 @@ void Game::load_level([[maybe_unused]] int level_number) const
 {
     asset_manager->clear();
 
-    asset_manager->add_texture("error", level_name.c_str());
+    if (map_loc.empty())
+    {
+        asset_manager->add_texture("map", "../assets/final-slam-map.png");
+    }
+    else
+    {
+        asset_manager->add_texture("map", map_loc.native().c_str());
+    }
 
-    asset_manager->add_texture("map", "../assets/final-slam-map.png");
+    asset_manager->add_texture("error", "../assets/error.png");
+
     asset_manager->add_texture("target", "../assets/collision-texture.png");
     asset_manager->add_texture("walkable", "../assets/walkable.png");
     asset_manager->add_texture("start", "../assets/start.png");
@@ -91,13 +99,21 @@ void Game::load_level([[maybe_unused]] int level_number) const
     switch (level_number)
     {
     case 0:
+        // query the map size
+        int width, height;
+        SDL_QueryTexture(asset_manager->get_texture("map"), NULL, NULL, &width, &height);
+
+        int x_offset = 400;
+        int y_offset = 80;
+
+        // create the base map
         Entity &base_map = manager.add_entity("base-map");
-        (void)base_map.add_component<TransformComponent>(330, 80, 0, 0, 920, 660, 1);
+        auto &trasform_comp = base_map.add_component<TransformComponent>(x_offset, y_offset, 0, 0, width, height, 1);
         (void)base_map.add_component<SpriteComponent>("map");
         // (void)base_map.add_component<ControlComponent>("w", "s", "a", "d");
 
         Entity &grid = manager.add_entity("Nav-Grid");
-        (void)grid.add_component<NavigationGridComponent>(330, 80, 920, 660, 32);
+        (void)grid.add_component<NavigationGridComponent>(&trasform_comp.position, width, height, 32);
 
         break;
     }
@@ -242,6 +258,18 @@ void Game::update(const float delta_time)
     }
 }
 
+static char map_path[500] = "";
+
+enum SceneOperation
+{
+    NONE,
+    NEW,
+    LOAD,
+    SAVE,
+};
+
+static SceneOperation scene_operation = NONE;
+
 void Game::render(const float delta_time)
 {
     ImGui_ImplSDLRenderer2_NewFrame();
@@ -254,58 +282,71 @@ void Game::render(const float delta_time)
         {
             if (ImGui::MenuItem("New"))
             {
-                static char *file_dialog_buffer;
-                static char path[500] = "";
+                scene_operation = NEW;
 
+                FileDialog::file_dialog_open = true;
+                FileDialog::file_dialog_open_type = FileDialog::FileDialogType::OpenFile;
                 ImGui::TextUnformatted("Path: ");
-                ImGui::InputText("##path", path, sizeof(path));
+                ImGui::InputText("##path", map_path, sizeof(map_path));
                 ImGui::SameLine();
-
-                if (FileDialog::file_dialog_open)
-                {
-                    FileDialog::ShowFileDialog_s(&FileDialog::file_dialog_open, file_dialog_buffer, FileDialog::file_dialog_open_type);
-                }
-
-                if (ImGui::Button("Choose file"))
-                {
-                    file_dialog_buffer = path;
-                    FileDialog::file_dialog_open = true;
-                    FileDialog::file_dialog_open_type = FileDialog::FileDialogType::OpenFile;
-                }
-
-                manager = EntityManager();
-                load_level(0);
             }
             if (ImGui::MenuItem("Save"))
             {
+                scene_operation = SAVE;
+
                 manager.get_entity_by_name("Nav-Grid")->get_component<NavigationGridComponent>()->save("nav-grid.json");
-
-                // static char *file_dialog_buffer;
-                // static char path[500] = "";
-
-                // ImGui::TextUnformatted("Path: ");
-                // ImGui::InputText("##path", path, sizeof(path));
-                // ImGui::SameLine();
-
-                // if (FileDialog::file_dialog_open)
-                // {
-                //     FileDialog::ShowFileDialog_s(&FileDialog::file_dialog_open, file_dialog_buffer, FileDialog::file_dialog_open_type);
-                // }
-
-                // if (ImGui::Button("Choose file"))
-                // {
-                //     file_dialog_buffer = path;
-                //     FileDialog::file_dialog_open = true;
-                //     FileDialog::file_dialog_open_type = FileDialog::FileDialogType::OpenFile;
-                // }
             }
             if (ImGui::MenuItem("Load"))
             {
+                scene_operation = LOAD;
+
                 manager.get_entity_by_name("Nav-Grid")->get_component<NavigationGridComponent>()->load("nav-grid.json");
             }
             ImGui::EndMenu();
         }
         ImGui::EndMainMenuBar();
+    }
+
+    if (FileDialog::file_dialog_open)
+    {
+        FileDialog::ShowFileDialog_s(&FileDialog::file_dialog_open, map_path, FileDialog::file_dialog_open_type);
+        if (FileDialog::file_dialog_open == false)
+        {
+            switch (scene_operation)
+            {
+            case NEW:
+                scene_operation = NONE;
+                if (strlen(map_path) > 0)
+                {
+                    // replace last \\ with /
+                    std::replace(map_path, map_path + strlen(map_path), '\\', '/');
+                    map_loc = map_path;
+                    manager = EntityManager();
+                    load_level(0);
+                }
+                break;
+            // case SAVE:
+            //     if (strlen(map_path) > 0)
+            //     {
+            //         // replace last \\ with /
+            //         std::replace(map_path, map_path + strlen(map_path), '\\', '/');
+            //         map_loc = map_path;
+            //         manager.get_entity_by_name("Nav-Grid")->get_component<NavigationGridComponent>()->save(map_loc.native().c_str());
+            //     }
+            //     break;
+            // case LOAD:
+            //     if (strlen(map_path) > 0)
+            //     {
+            //         // replace last \\ with /
+            //         std::replace(map_path, map_path + strlen(map_path), '\\', '/');
+            //         map_loc = map_path;
+            //         manager.get_entity_by_name("Nav-Grid")->get_component<NavigationGridComponent>()->load(map_loc.native().c_str());
+            //     }
+            //     break;
+            default:
+                break;
+            }
+        }
     }
 
     ImGui::Begin("Entity Manager");
