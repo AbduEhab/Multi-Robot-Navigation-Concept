@@ -252,6 +252,7 @@ void Game::render(const float delta_time)
         {
             if (ImGui::MenuItem("New"))
             {
+                manager.clear();
                 load_level(0);
             }
             if (ImGui::MenuItem("Save"))
