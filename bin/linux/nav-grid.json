@@ -1,5 +1,5 @@
 {
-    "element_size": 165,
+    "element_size": 9,
     "grid": [
         {
             "goal": false,
@@ -25,11 +25,131 @@
             "goal": false,
             "occupied": false,
             "path": false,
-            "path_assigned_to": 1,
-            "start": true,
-            "texture": "start",
-            "visited": true,
-            "walkable": true
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
         },
         {
             "goal": false,
@@ -106,10 +226,1350 @@
             "occupied": false,
             "path": false,
             "path_assigned_to": 0,
-            "start": true,
-            "texture": "start",
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
             "visited": false,
             "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
         },
         {
             "goal": false,
@@ -157,6 +1617,46 @@
             "path": false,
             "path_assigned_to": 0,
             "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
             "texture": "wall",
             "visited": false,
             "walkable": false
@@ -172,6 +1672,786 @@
             "walkable": false
         },
         {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 1,
+            "start": true,
+            "texture": "start",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
             "goal": true,
             "occupied": false,
             "path": false,
@@ -180,6 +2460,1486 @@
             "texture": "goal",
             "visited": false,
             "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": true,
+            "texture": "start",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "walkable",
+            "visited": false,
+            "walkable": true
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
+        },
+        {
+            "goal": false,
+            "occupied": false,
+            "path": false,
+            "path_assigned_to": 0,
+            "start": false,
+            "texture": "wall",
+            "visited": false,
+            "walkable": false
         },
         {
             "goal": false,
@@ -202,11 +3962,11 @@
             "walkable": false
         }
     ],
-    "height": 4,
+    "height": 33,
     "paths": 2,
     "position": [
-        330.0,
+        840.0,
         80.0
     ],
-    "width": 5
+    "width": 12
 }

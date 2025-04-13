@@ -15,13 +15,17 @@ public:
 
     bool is_visible = true;
 
+    const float *scale = nullptr;
+
 #ifdef DEBUG
     std::string name = "SpriteComponent";
 #endif // DEBUG
 
-    SpriteComponent(std::string texture_id, bool is_fixed = false)
+    SpriteComponent(std::string texture_id, bool is_fixed, const float *scale)
     {
         set_texture(texture_id);
+
+        this->scale = scale;
 
         is_animated = false;
         this->is_fixed = is_fixed;
@@ -107,8 +111,8 @@ public:
         {
             destiation_rect.x = (int)transform->position.x;
             destiation_rect.y = (int)transform->position.y;
-            destiation_rect.w = (transform->width * transform->scale);
-            destiation_rect.h = (transform->height * transform->scale);
+            destiation_rect.w = (transform->width * transform->scale * *scale);
+            destiation_rect.h = (transform->height * transform->scale * *scale);
         }
     }
 

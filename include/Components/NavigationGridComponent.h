@@ -329,13 +329,17 @@ public:
     size_t ref_width;
     size_t ref_height;
 
+    const float *scale;
+
 #ifdef DEBUG
     std::string name = "NavigationGridComponent";
 #endif // DEBUG
 
-    NavigationGridComponent(glm::vec2 *position, const size_t width, const size_t height, size_t element_size)
+    NavigationGridComponent(glm::vec2 *position, const size_t width, const size_t height, size_t element_size, const float *scale)
     {
         this->position = position;
+
+        this->scale = scale;
 
         ref_width = width;
         ref_height = height;
@@ -385,7 +389,7 @@ public:
         {
             for (size_t x = 0; x < width; x++)
             {
-                grid[y * width + x].update(position->x + x * element_size, position->y + y * element_size, element_size, path_index);
+                grid[y * width + x].update(position->x + x * element_size * *scale, position->y + y * element_size * *scale, element_size * *scale, path_index);
             }
         }
     }
@@ -396,7 +400,7 @@ public:
         {
             for (size_t x = 0; x < width; x++)
             {
-                grid[y * width + x].render(position->x + x * element_size, position->y + y * element_size, element_size);
+                grid[y * width + x].render(position->x + x * element_size * *scale, position->y + y * element_size * *scale, element_size * *scale);
             }
         }
     }

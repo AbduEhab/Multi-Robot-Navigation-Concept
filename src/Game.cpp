@@ -109,11 +109,11 @@ void Game::load_level([[maybe_unused]] int level_number) const
         // create the base map
         Entity &base_map = manager.add_entity("base-map");
         auto &trasform_comp = base_map.add_component<TransformComponent>(x_offset, y_offset, 0, 0, width, height, 1);
-        (void)base_map.add_component<SpriteComponent>("map");
+        (void)base_map.add_component<SpriteComponent>("map", false, &scale);
         // (void)base_map.add_component<ControlComponent>("w", "s", "a", "d");
 
         Entity &grid = manager.add_entity("Nav-Grid");
-        (void)grid.add_component<NavigationGridComponent>(&trasform_comp.position, width, height, 32);
+        (void)grid.add_component<NavigationGridComponent>(&trasform_comp.position, width, height, 32, &scale);
 
         break;
     }
@@ -222,6 +222,18 @@ void Game::process_input()
             {
                 print("Q key pressed, quitting...");
                 running = false;
+            }
+            else if (event.key.keysym.sym == SDLK_PAGEUP)
+            {
+                scale *= 1.1f;
+                screen_size.x *= 1.1f;
+                screen_size.y *= 1.1f;
+            }
+            else if (event.key.keysym.sym == SDLK_PAGEDOWN)
+            {
+                scale *= 0.9f;
+                screen_size.x *= 0.9f;
+                screen_size.y *= 0.9f;
             }
             break;
 
