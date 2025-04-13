@@ -832,9 +832,11 @@ public:
                     debug_print("Adding actions to json");
                     path_data["actions"] = path.get_actions_json();
 
+                    path_data["element_size"] = element_size;
+
                     j.push_back(path_data);
                 }
-
+                
                 std::ofstream file("paths.json");
                 file << j.dump(4);
                 file.close();
